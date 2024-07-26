@@ -1,0 +1,2 @@
+# OllamAgent
+Ollama agent solution
