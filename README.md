@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://raw.githubusercontent.com/XenocodeRCE/OllamAgent/main/logo.svg" alt="Logo" style="width:500px;">
+</p>
+
 # OllamAgent
 Ollama agent solution
 
