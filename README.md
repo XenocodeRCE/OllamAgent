@@ -11,27 +11,23 @@ Ollama agent solution
 ```
 {
   "type": "WORKER",
-  "nom": "001",
-  "tâche": "Analyse des données",
+  "nom": "élève",
+  "tâche": "Formule une explication du sujet en utilisant au moins quatre exemples pour que tout le monde comprenne bien les concepts en jeu dans le sujet. Ta réflexion doit être étayée par des analyses conceptuelles, des références et des exemples philosophiques, classiques, pertinents et élaborés. N'hésite pas à puiser dans le corpus et les doctrines philosophiques des auteurs au programme : Les présocratiques ; Platon ; Aristote ; Zhuangzi ; Épicure ; Cicéron ; Lucrèce ; Sénèque ; Épictète ; Marc Aurèle ; Nāgārjuna ; Sextus Empiricus ; Plotin ; Augustin ; Avicenne ; Anselme ; Averroès ; Maïmonide ; Thomas d’Aquin ; Guillaume d’Occam. N. Machiavel ; M. Montaigne (de) ; F. Bacon ; T. Hobbes ; R. Descartes ; B. Pascal ; J. Locke ; B. Spinoza ; N. Malebranche ; G. W. Leibniz ; G. Vico ; G. Berkeley ; Montesquieu ; D. Hume ; J.-J. Rousseau ; D. Diderot ; E. Condillac (de) ; A. Smith ; E. Kant ; J. Bentham. G.W.H. Hegel ; A. Schopenhauer ; A. Comte ; A.- A. Cournot ; L. Feuerbach ; A. Tocqueville (de) ; J.-S. Mill ; S. Kierkegaard ; K. Marx ; F. Engels ; W. James ; F. Nietzsche ; S. Freud ; E. Durkheim ; H. Bergson ; E. Husserl ; M. Weber ; Alain ; M. Mauss ; B. Russell ; K. Jaspers ; G. Bachelard ; M. Heidegger ; L. Wittgenstein ; W. Benjamin ; K. Popper ; V. Jankélévitch ; H. Jonas ; R. Aron ; J.-P. Sartre ; H. Arendt ; E. Levinas ; S. de Beauvoir ; C. Lévi-Strauss ; M. Merleau-Ponty ; S. Weil ; J. Hersch ; P. Ricœur ; E. Anscombe ; I. Murdoch ; J. Rawls ; G. Simondon ; M. Foucault ; H. Putnam.",
   "contexte": {
     "modèles": [
-      "Modèle A",
-      "Modèle B"
+      "...",
+      "..."
     ],
     "besoins": [
       {
-        "nom": "Besoin1",
+        "nom": "sujet",
         "contenu": ""
-      },
-      {
-        "nom": "Besoin2",
-        "contenu": "Instructions spécifiques"
       }
     ]
   }
 }
 ```
-**Explications : **
+**Explications :**
 
 - type : WORKER (agent) / SUPERVISOR (évaluateur)
 - nom : _
@@ -48,7 +44,7 @@ Ollama agent solution
 ```csharp
 var d = new Discussion("Rédiger une dissertation de philosophie.");
 // récupère les agents dans le dossier /Agents automatiquement
-var rep = await d.GetAgent("001").ExecuteTask();
+var rep = await d.GetAgent("élève").ExecuteTask();
 // récupère les 'besoins' chez les autres agents, s'il n'y a pas : demande à l'utilisateur
 ```
 
