@@ -1,0 +1,21 @@
+{
+  "type": "WORKER",
+  "nom": "001",
+  "tâche": "Analyse des données",
+  "contexte": {
+    "modèles": [
+      "Modèle A",
+      "Modèle B"
+    ],
+    "besoins": [
+      {
+        "nom": "Besoin1",
+        "contenu": ""
+      },
+      {
+        "nom": "Besoin2",
+        "contenu": "Instructions spécifiques"
+      }
+    ]
+  }
+}
